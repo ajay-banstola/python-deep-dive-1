@@ -1,0 +1,69 @@
+reference counting
+getrefcounter or cytpes 
+floats 0.1 + 0.1 + 0.1 not equal to 0.3
+use math isclose with abs and relative tolerance
+rational numbers are fractions of integers
+fractions are always reduced and sign to numerator
+constraint denominator by limit_denominator
+bin() or 0b1010
+base change algorithm based on
+n = b* (n//b) + n% b
+a//b is not the integer portion but floor
+int uses variable number of bits
+
+optimizations
+24*60 will automatically precalculate
+short sequence <20
+'abc' * 3
+if e in [1,2,3] ko thauma use {1,2,3}
+lists - tuples
+sets - frozensets
+membership tests, mutables by immutables.
+
+interning
+identifiers are interned, might also with starting with number
+a == b character by character.
+if interned, same memory addred
+a is b is faster
+force intern by sys.intern()
+a = 500
+b = 500 
+a is not b
+interning is reusing objects on demand
+preloads a global list of integers [-5,256]
+singletone?
+mutable objects dont compare by is
+a = [1,2,3]
+b = [1,2,3]
+ a is not b
+a = 10
+b = 10.0 
+a is not b
+None, all same None
+with mutable objects, python will never create shared 
+references
+a = [1,2,3]
+b = a
+a.append(4)
+print(a,b) [1,2,3,4] [1,2,3,4]
+
+a = 3
+b = a 
+a = 4 
+print(a,b) 4,3
+
+once string is created contents of objects cannot
+be changed. only way is to re assign to another object
+it just references to another location
+
+so if pass string in function and change the string
+original is still original
+
+not with mutable, if pass list,it changes original 
+list
+points to same location.
+same with ([1,2],'a') which is
+mutable in immutable
+we can change it by t[0].append(3)
+
+
