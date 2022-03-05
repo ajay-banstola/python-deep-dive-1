@@ -66,4 +66,5 @@ same with ([1,2],'a') which is
 mutable in immutable
 we can change it by t[0].append(3)
 
+Python coercing with floats.
 
